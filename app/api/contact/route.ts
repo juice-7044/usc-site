@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server"
-import { createClient } from "@/lib/supabase/server"
 
 async function sendToHubSpot(data: {
   name: string
@@ -65,24 +64,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { error: "Name, email, and message are required" },
         { status: 400 }
-      )
-    }
-
-    const supabase = await createClient()
-
-    const { error } = await supabase.from("contact_submissions").insert({
-      name,
-      email,
-      phone: phone || null,
-      company: company || null,
-      message: inquiryReason ? `[${inquiryReason}] ${message}` : message,
-    })
-
-    if (error) {
-      console.error("Error saving contact submission:", error)
-      return NextResponse.json(
-        { error: "Failed to save submission" },
-        { status: 500 }
       )
     }
 
