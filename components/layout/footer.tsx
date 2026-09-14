@@ -58,7 +58,7 @@ export function Footer() {
               ))}
               <li>
                 <a 
-                  href="https://manipulative-agent-launch-flow.base44.app"
+                  href="https://team.universalsolutionsconsultancy.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary-foreground/70 hover:text-primary transition-colors"
