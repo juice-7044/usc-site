@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  lodash@4.17.23: https://npm.aikido.io/273f0e789033093cfcb83/lodash@4.17.23-aikido.2
+
 importers:
 
   .:
@@ -1698,8 +1701,9 @@ packages:
   linkifyjs@4.3.3:
     resolution: {integrity: sha512-P8aEP5U/D1/IlTY2OeYsErdwh9bGuLE30NcXtKEjgdHcahveQoQwM2yZNsioQHsWFz0P7KKudisbrzCgR0sDHg==}
 
-  lodash@4.17.23:
-    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
+  lodash@https://npm.aikido.io/273f0e789033093cfcb83/lodash@4.17.23-aikido.2:
+    resolution: {tarball: https://npm.aikido.io/273f0e789033093cfcb83/lodash@4.17.23-aikido.2}
+    version: 4.17.23-aikido.2
 
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
@@ -1889,6 +1893,7 @@ packages:
   recharts@2.15.0:
     resolution: {integrity: sha512-cIvMxDfpAmqAmVgc4yb7pgm/O1tmmkl/CjrvXuW+62/+7jj/iF9Ykm+hb/UJt42TREHMyd3gb+pkgoa2MxgDIw==}
     engines: {node: '>=14'}
+    deprecated: 1.x and 2.x branches are no longer active. Bump to Recharts v3 to receive latest features and bugfixes. See https://github.com/recharts/recharts/wiki/3.0-migration-guide
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -3395,7 +3400,7 @@ snapshots:
 
   linkifyjs@4.3.3: {}
 
-  lodash@4.17.23: {}
+  lodash@https://npm.aikido.io/273f0e789033093cfcb83/lodash@4.17.23-aikido.2: {}
 
   loose-envify@1.4.0:
     dependencies:
@@ -3616,7 +3621,7 @@ snapshots:
     dependencies:
       clsx: 2.1.1
       eventemitter3: 4.0.7
-      lodash: 4.17.23
+      lodash: https://npm.aikido.io/273f0e789033093cfcb83/lodash@4.17.23-aikido.2
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
       react-is: 18.3.1
