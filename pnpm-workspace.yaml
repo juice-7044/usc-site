@@ -1,0 +1,3 @@
+blockExoticSubdeps: false
+overrides:
+  "lodash@4.17.23": "https://npm.aikido.io/273f0e789033093cfcb83/lodash@4.17.23-aikido.2"
